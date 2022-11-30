@@ -18,6 +18,8 @@
 		AC2F66EC293450BF004FB551 /* Cat_ioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66EB293450BF004FB551 /* Cat_ioTests.swift */; };
 		AC2F66F6293450BF004FB551 /* Cat_ioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66F5293450BF004FB551 /* Cat_ioUITests.swift */; };
 		AC2F66F8293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66F7293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift */; };
+		ACFF16122937FA25006D33C2 /* IceShard.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACFF16112937FA25006D33C2 /* IceShard.sks */; };
+		ACFF16142937FC20006D33C2 /* IceShard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF16132937FC20006D33C2 /* IceShard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		AC2F66F1293450BF004FB551 /* Cat.ioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cat.ioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2F66F5293450BF004FB551 /* Cat_ioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_ioUITests.swift; sourceTree = "<group>"; };
 		AC2F66F7293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_ioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACFF16112937FA25006D33C2 /* IceShard.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = IceShard.sks; sourceTree = "<group>"; };
+		ACFF16132937FC20006D33C2 /* IceShard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceShard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				AC2F66DB293450BE004FB551 /* Main.storyboard */,
 				AC2F66DE293450BF004FB551 /* Assets.xcassets */,
 				AC2F66E0293450BF004FB551 /* LaunchScreen.storyboard */,
+				ACFF16112937FA25006D33C2 /* IceShard.sks */,
+				ACFF16132937FC20006D33C2 /* IceShard.swift */,
 			);
 			path = Cat.io;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 				AC2F66D4293450BE004FB551 /* GameScene.sks in Resources */,
 				AC2F66DF293450BF004FB551 /* Assets.xcassets in Resources */,
 				AC2F66E2293450BF004FB551 /* LaunchScreen.storyboard in Resources */,
+				ACFF16122937FA25006D33C2 /* IceShard.sks in Resources */,
 				AC2F66D6293450BE004FB551 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFF16142937FC20006D33C2 /* IceShard.swift in Sources */,
 				AC2F66D8293450BE004FB551 /* GameScene.swift in Sources */,
 				AC2F66DA293450BE004FB551 /* GameViewController.swift in Sources */,
 				AC2F66D2293450BE004FB551 /* AppDelegate.swift in Sources */,

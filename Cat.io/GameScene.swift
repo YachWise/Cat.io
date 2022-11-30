@@ -9,10 +9,16 @@ class GameScene: SKScene
     var player: SKSpriteNode!
     var ground = SKSpriteNode()
     
+    let ice: SKEmitterNode = SKEmitterNode()
     override func didMove(to view: SKView) {
         //self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.createJoyStick()
         self.createPlayer()
+    }
+    
+    private func createGround()
+    {
+        
     }
     
     func createPlayer()
@@ -89,7 +95,14 @@ class GameScene: SKScene
             let dy = self.innerKnob.position.y - self.outerKnob.position.y
             let angle = atan2(dy, dx)
             self.player.position = CGPoint(x:cos(angle)*5+self.player.position.x, y: sin(angle)*5+self.player.position.y)
+            let xFlip = cos(angle) * -5+self.player.position.x
+            let yFlip = sin(angle) * -5 + self.player.position.y
+            let flipped = CGPoint(x: xFlip, y: yFlip)
             
+           // let pos =
+            let iceShard = IceShard(startPos: self.player.position, endPos: flipped)
+            
+            addChild(iceShard)
             self.cameraNode.position = self.player.position
             let x = player.position.x
             let y = player.position.y
@@ -110,6 +123,8 @@ class GameScene: SKScene
         }
     }
     
+
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         let location = touch!.location(in: self)
@@ -124,6 +139,7 @@ class GameScene: SKScene
             self.innerKnob.position = convertLocation
             let square = sqrt(dx*dx + dy*dy)
             
+           
             //face the player right side
             if (self.innerKnob.position.x > outerKnob.position.x)
             {
