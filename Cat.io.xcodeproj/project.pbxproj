@@ -18,6 +18,7 @@
 		AC2F66EC293450BF004FB551 /* Cat_ioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66EB293450BF004FB551 /* Cat_ioTests.swift */; };
 		AC2F66F6293450BF004FB551 /* Cat_ioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66F5293450BF004FB551 /* Cat_ioUITests.swift */; };
 		AC2F66F8293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F66F7293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift */; };
+		AC3B4048296A1885004C9EAA /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3B4047296A1885004C9EAA /* ProgressBar.swift */; };
 		ACFF16122937FA25006D33C2 /* IceShard.sks in Resources */ = {isa = PBXBuildFile; fileRef = ACFF16112937FA25006D33C2 /* IceShard.sks */; };
 		ACFF16142937FC20006D33C2 /* IceShard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFF16132937FC20006D33C2 /* IceShard.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		AC2F66F1293450BF004FB551 /* Cat.ioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cat.ioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2F66F5293450BF004FB551 /* Cat_ioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_ioUITests.swift; sourceTree = "<group>"; };
 		AC2F66F7293450BF004FB551 /* Cat_ioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat_ioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC3B4047296A1885004C9EAA /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		ACFF16112937FA25006D33C2 /* IceShard.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = IceShard.sks; sourceTree = "<group>"; };
 		ACFF16132937FC20006D33C2 /* IceShard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceShard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				AC2F66E0293450BF004FB551 /* LaunchScreen.storyboard */,
 				ACFF16112937FA25006D33C2 /* IceShard.sks */,
 				ACFF16132937FC20006D33C2 /* IceShard.swift */,
+				AC3B4047296A1885004C9EAA /* ProgressBar.swift */,
 			);
 			path = Cat.io;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				ACFF16142937FC20006D33C2 /* IceShard.swift in Sources */,
 				AC2F66D8293450BE004FB551 /* GameScene.swift in Sources */,
 				AC2F66DA293450BE004FB551 /* GameViewController.swift in Sources */,
+				AC3B4048296A1885004C9EAA /* ProgressBar.swift in Sources */,
 				AC2F66D2293450BE004FB551 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

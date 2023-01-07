@@ -2,6 +2,10 @@ import SpriteKit
 
 class GameScene: SKScene
 {
+    //MARK: - I add the progress bar as a variable here
+    //i'll add other marks where i'm making calls necessary for the Progress Bar
+    var progressBar = ProgressBar()
+    
     var touchBall: Bool = false
     var innerKnob: SKShapeNode!
     var outerKnob: SKShapeNode!
@@ -10,17 +14,23 @@ class GameScene: SKScene
     var ground = SKSpriteNode()
     
     let ice: SKEmitterNode = SKEmitterNode()
+    
     override func didMove(to view: SKView) {
         //self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.createJoyStick()
         self.createPlayer()
-    }
-    
-    private func createGround()
-    {
+        
+        //MARK: - beepboop down here matt we call some functions from our node class
+        //we set our scene frame value
+        self.progressBar.getSceneFrame(sceneFrame: frame)
+        //we add the node parts to the parent node and then add that node to this scene
+        self.progressBar.buildProgressBar()
+        self.addChild(progressBar)
+        
+        self.demoForMatt()
         
     }
-    
+        
     func createPlayer()
     {
         self.player = SKSpriteNode(texture: SKTexture(imageNamed: "cat1_idle_00"))
@@ -89,6 +99,11 @@ class GameScene: SKScene
         
     }
     
+
+    //MARK: - beepboop now down here
+    //normally you want to call your update progress function within this, instead of using a timer
+    //but i am using a timer to show 0 to full progress which i dont have implemented in this game
+    //yet
     override func update(_ currentTime: TimeInterval) {
         if (self.touchBall){
             let dx = self.innerKnob.position.x - self.outerKnob.position.x
@@ -108,6 +123,19 @@ class GameScene: SKScene
             let y = player.position.y
             let playerPos = CGPoint(x: x, y: y)
             //print(playerPos)
+        }
+    }
+    //MARK: - so i made a timer function here to do just that
+    func demoForMatt()
+    {
+        var count = 0
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            if (count >= 9) {
+                timer.invalidate()
+            }
+            self.progressBar.updateProgressBar()
+            count += 1
+            print("should update here")
         }
     }
     
