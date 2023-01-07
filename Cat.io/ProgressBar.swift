@@ -71,7 +71,7 @@ class ProgressBar: SKNode
         //we will do an skaction to change the width of the progress bar to update the progress
         //toWidth is solved in the same way youwould solve something's progress
         //duration is arbitrary
-        if (self.progress >= self.maxProgress) { return }
+        if (self.progress > self.maxProgress) { return }
         self.progressBar.run(SKAction.resize(toWidth: CGFloat(self.progress/self.maxProgress) * self.maxProgressBarWidth, duration: 0.2))
         self.progress += 1
     }

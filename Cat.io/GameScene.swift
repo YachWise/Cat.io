@@ -130,7 +130,7 @@ class GameScene: SKScene
     {
         var count = 0
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            if (count >= 9) {
+            if (count > 9) {
                 timer.invalidate()
             }
             self.progressBar.updateProgressBar()
